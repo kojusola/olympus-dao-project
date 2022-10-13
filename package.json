@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/descendant": "^3.0.10",
     "@chakra-ui/react": "^2.3.5",
     "@emotion/react": "11",
     "@emotion/styled": "11",
+    "ethers": "^5.7.1",
     "framer-motion": "6",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-toastify": "^9.0.8",
+    "wagmi": "^0.6.8"
   },
   "devDependencies": {
     "@types/node": "18.8.2",
