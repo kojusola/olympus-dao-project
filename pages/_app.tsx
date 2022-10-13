@@ -16,7 +16,7 @@ const client = createClient({
 });
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={client}>
     <ChakraProvider>
