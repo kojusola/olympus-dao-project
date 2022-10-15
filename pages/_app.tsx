@@ -7,7 +7,7 @@ import { providers } from "ethers";
 
 const nahmiiProvider = new providers.JsonRpcProvider(
   process.env.NEXT_PUBLIC_RPC,
-  { name: "nahmii", chainId: 5553, ensAddress: undefined }
+  { name: "nahmii", chainId: 5554, ensAddress: undefined }
 );
 
 const client = createClient({
