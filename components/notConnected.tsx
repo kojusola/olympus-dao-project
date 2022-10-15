@@ -5,11 +5,12 @@ import { HiOutlineInformationCircle } from "react-icons/hi";
 function NotConnected() {
   return (
     <div>
-      <Stack marginTop={"2rem"}>
+      <Stack width={"1000px"} display="flex" marginTop={"2rem"}>
         <Box
           as="div"
           borderRadius={"5px"}
           backgroundColor={"rgba(20, 26, 31, 0.51)"}
+          width={"1000px"} height="200px" padding="1rem"
         >
           <HStack>
             <Box>
