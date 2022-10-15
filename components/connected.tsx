@@ -1,8 +1,11 @@
 import { Box, Button, Flex, Text, useDisclosure } from "@chakra-ui/react";
 import React from "react";
+import useContract from "../hooks/useContract";
 import { ModalBond } from "./modal";
 
 function Connected() {
+  const {contract} =  useContract()
+  console.log(contract)
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box

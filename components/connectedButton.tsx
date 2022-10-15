@@ -1,25 +1,30 @@
 import React from "react";
 import { makeNum, shortenAddress } from "../utils/helper";
-import {useAccount, useBalance} from "wagmi";
+import {useAccount, useBalance, useConnect, useDisconnect} from "wagmi";
 import { Text } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
+import { InjectedConnector } from "wagmi/connectors/injected";
+
+
 
 
 
 
 
 const  AuthButton = () => {
-
+ const {disconnect} = useDisconnect()
   const {address} =  useAccount()
    const {data} = useBalance({
     addressOrName:address
    })
 
-   console.log(data)
+   const disconnectInjected = () =>{
+    disconnect()
+   }
 
 
   return (
-      <Box  backgroundColor={"transparent"} border="1px solid #f9f9f9" display={"flex"} justifyContent="center" alignItems={"center"} padding="0.75rem">
+      <Box onClick={disconnectInjected} backgroundColor={"transparent"} border="1px solid #f9f9f9" display={"flex"} justifyContent="center" alignItems={"center"} padding="0.75rem">
         <p>
           <Text color="white" marginRight={"15px"}>{shortenAddress(address as string)}</Text>
         </p>
