@@ -1,9 +1,14 @@
 import { Box, Button, Flex, Text, useDisclosure } from "@chakra-ui/react";
 import React from "react";
+import useContract from "../hooks/useContract";
 import { ModalBond } from "./modal";
 
 function Connected() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+   const {contract} =  useContract()
+
+
+   console.log(contract.initializeBond(1,1,1,1,1,1))
   return (
     <Box
       as="div"
