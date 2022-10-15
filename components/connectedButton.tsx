@@ -15,6 +15,8 @@ const  AuthButton = () => {
     addressOrName:address
    })
 
+   console.log(data)
+
 
   return (
       <Box  backgroundColor={"transparent"} border="1px solid #f9f9f9" display={"flex"} justifyContent="center" alignItems={"center"} padding="0.75rem">
