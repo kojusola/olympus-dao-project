@@ -6,7 +6,7 @@ import { WagmiConfig, createClient } from "wagmi";
 import { providers } from "ethers";
 
 const nahmiiProvider = new providers.JsonRpcProvider(
-  process.env.NEXT_PUBLIC_RPC,
+  "https://ngeth.n3g0.nahmii.net/",
   { name: "nahmii", chainId: 5554, ensAddress: undefined }
 );
 
