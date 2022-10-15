@@ -3,8 +3,6 @@ import { makeNum, shortenAddress } from "../utils/helper";
 import {useAccount, useBalance, useConnect, useDisconnect} from "wagmi";
 import { Text } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
-import { InjectedConnector } from "wagmi/connectors/injected";
-
 
 
 
@@ -24,7 +22,7 @@ const  AuthButton = () => {
 
 
   return (
-      <Box onClick={disconnectInjected} backgroundColor={"transparent"} border="1px solid #f9f9f9" display={"flex"} justifyContent="center" alignItems={"center"} padding="0.75rem">
+      <Box cursor={"pointer"} onClick={disconnectInjected} backgroundColor={"transparent"} border="1px solid #f9f9f9" display={"flex"} justifyContent="center" alignItems={"center"} padding="0.75rem">
         <p>
           <Text color="white" marginRight={"15px"}>{shortenAddress(address as string)}</Text>
         </p>
