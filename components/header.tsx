@@ -95,38 +95,6 @@ const metamask = () =>{
                   </div>
                 </Box>
 
-                {/* <Box as="div" cursor={"pointer"}>
-                  <div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginBottom: "15px",
-                      }}
-                    >
-                      <Image
-                        boxSize="100px"
-                        objectFit="cover"
-                        src="/walletconnect.png"
-                        alt="metamask"
-                      />
-                    </div>
-                    <Text
-                      fontSize={"20px"}
-                      fontWeight="bold"
-                      textAlign={"center"}
-                    >
-                      WalletConnect
-                    </Text>
-                    <Text
-                      fontSize={"20px"}
-                      color="#968B8B"
-                      textAlign={"center"}
-                    >
-                      Scan with walletconnect to launch
-                    </Text>
-                  </div>
-                </Box> */}
               </VStack>
             </ModalBody>
           </ModalContent>

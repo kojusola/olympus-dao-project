@@ -14,7 +14,7 @@ function NotConnected() {
         >
           <HStack>
             <Box>
-              <Heading fontSize="xl" color={"white"}>Exchange your LP</Heading>
+              <Heading fontSize="xl" color={"white"} textAlign="center">Exchange your LP</Heading>
               <Text mt={4} color="white">
                 Exchange available LP tokens for governance tokens at below
                 market rate Bonds.
@@ -22,15 +22,15 @@ function NotConnected() {
             </Box>
 
             <Box>
-              <Heading fontSize="xl" color={"white"}>Linear Vesting</Heading>
+              <Heading fontSize="xl" color={"white"} textAlign="center">Linear Vesting</Heading>
               <Text mt={4} color={"white"}>
                 Once you receive a Bond, you are able to vest at any time within
                 the vesting period.
               </Text>
             </Box>
 
-            <Box>
-              <Heading fontSize="xl" color={"white"}>Below-Market-Rate Discount</Heading>
+            <Box marginLeft={"14rem"}>
+              <Heading fontSize="xl" color={"white"} textAlign="center">Below-Market-Rate Discount</Heading>
               <Text mt={4} color={"white"}>
                 To receive a below market rate swap, find your desired Bond with
                 a positive discount rate.
